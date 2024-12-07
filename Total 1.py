@@ -8,7 +8,9 @@ student_results={}
 while len(grades)>0:
     result=grades.pop(0)
     student=students.pop(0)
-    n=len(student)
+    #print(student)
+    n=len(result)
+    #print(n)
     result=sum(result)/n
     #print(student,':',result)
     student_results.update({student:result})

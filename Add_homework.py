@@ -18,15 +18,18 @@ result = []
 result_1 = []
 
 for i in range(1,number-1): # i перебираем от 1 до number-1 (в паре нет 0 и самого значения)
-    result_1.sort()
-    result = result + result_1
-    result_1 = []
+    # result_1.sort()
+    # result = result + result_1
+    # result_1 = []
     for j in list_password:   # присваиваем переменной j поочередно значения списка
         if int(j[0][0]) == i:  #  первая цифра значения переменной j == i
             j = int(j)
             password_2.append(j)
             result_1 = result_1 + password_2
             password_2 = []
+    result_1.sort()
+    result = result + result_1
+    result_1 = []
 result = map(str,result)
 result = ''.join(result)
 print(result)

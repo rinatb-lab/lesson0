@@ -1,6 +1,6 @@
 def send_email(message, recipient, * , sender = 'university.help@gmail.com') :
     j = 0
-    x = 0
+    x = []
     z = 0
 
     if recipient == sender:

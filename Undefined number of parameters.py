@@ -11,8 +11,8 @@ def single_root_words(root_word ='berry' , *other_words):
             a = i.lower()
             if a in b:
                 same_words.append(i)
-    print(same_words)
-
-
-single_root_words( 'Рома', 'Роман' , 'sometimes' , 'роМаны' , 'аэродром')
-single_root_words('sunnys' , 'sun' , 'sunny' , 'sunsilk')
+    return same_words
+result_1 = single_root_words( 'Рома', 'Роман' , 'sometimes' , 'роМаны' , 'ромка')
+result_2 = single_root_words('sunnys' , 'sun' , 'sunny' , 'sunsilk')
+print(result_1)
+print(result_2)
